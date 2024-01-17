@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../assets/biru.svg">
+        <!-- remixIcon -->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <!-- MathJax -->
+        <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <!-- styleSheet -->
+        <link rel="stylesheet" href="../style/style.css">
+        <title>Geometry</title>
+    </head>
+    <body>
+        <div class="black-bg">
+            <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="https://github.com/44120N" class="nav__logo">
+                        <img src="../assets/putih.svg">
+                    </a>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__burger"></i>
+                        <i class="ri-close-line nav__close"></i>
+                    </div>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li><a href="../index.html" class="nav__link">Home</a></li>
+                        <li><a href="../triangle/triangle.html" class="nav__link">Triangle</a></li>
+                        <li><a href="../square/square.html" class="nav__link">Square</a></li>
+                        <li><a href="../rectangle/rectangle.html" class="nav__link">Rectangle</a></li>
+                        <li><a href="../circle/circle.html" class="nav__link">Circle</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </header>
+            <div class="banner">
+                <video autoplay muted loop>
+                    <source src="../assets/media/videos/geo/1080p60/MyScene.mp4" type="video/mp4" />
+                </video>
+                <div class="caption">
+                    <p id="title">Square</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about">
+            <div class="content">
+                <div class="title">
+                    Perimeter
+                </div>
+                <div class="lineh"></div>
+                <div class="form">
+                    <span class="form__equation">
+                        \[P = 4a\]
+                    </span>
+                    <table style="width: 100%; table-layout: fixed;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="margin: 0;">
+                                        <tr>    
+                                            <td>
+                                                <label for="aP">\(a\)</label>
+                                            </td>
+                                            <td style="width: 20%;">
+                                                <p>side</p>
+                                            </td>
+                                            <td>
+                                                <input id="aP" type="number" oninput="callPerimeter()">
+                                            </td>
+                                        </tr>
+                                        <tr>    
+                                            <td>
+                                                <label for="P">\(P\)</label>
+                                            </td>
+                                            <td style="width: 20%;">
+                                                <p>Perimeter</p>
+                                            </td>
+                                            <td>
+                                                <input id="P" type="number" oninput="callPerimeter()">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <video autoplay muted loop>
+                                        <source src="../assets/media/videos/geo/1080p60/square/MySquare_line.mp4" type="video/mp4" />
+                                    </video>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form__result">
+                        <div class="eq-align">
+                            <p id="perimeter"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="title">
+                    Diagonal
+                </div>
+                <div class="lineh"></div>
+                <div class="form">
+                    <span class="form__equation">
+                        \[A = \sqrt{2}a\]
+                    </span>
+                    <table style="width: 100%; table-layout: fixed;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="margin: 0;">
+                                        <tr>    
+                                            <td>
+                                                <label for="aD">\(a\)</label>
+                                            </td>
+                                            <td style="width: 20%;">
+                                                <p>side</p>
+                                            </td>
+                                            <td>
+                                                <input id="aD" type="number" oninput="callDiagonal()">
+                                            </td>
+                                        </tr>
+                                        <tr>    
+                                            <td>
+                                                <label for="d">\(d\)</label>
+                                            </td>
+                                            <td style="width: 20%;">
+                                                <p>diagonal</p>
+                                            </td>
+                                            <td>
+                                                <input id="d" type="number" oninput="callDiagonal()">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <video autoplay muted loop>
+                                        <source src="../assets/media/videos/geo/1080p60/square/MySquare_d.mp4" type="video/mp4" />
+                                    </video>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form__result">
+                        <p class="eq-align">
+                            <p id="diagonal"></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="content">
+                <div class="title">
+                    Area
+                </div>
+                <div class="lineh"></div>
+                <div class="form">
+                    <span class="form__equation">
+                        \[A = a^2\]
+                    </span>
+                    <table style="width: 100%; table-layout: fixed;">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <table style="margin: 0;">
+                                        <tr>    
+                                            <td>
+                                                <label for="aA">\(a\)</label>
+                                            </td>
+                                            <td style="width: 20%;">
+                                                <p>side</p>
+                                            </td>
+                                            <td>
+                                                <input id="aA" type="number" oninput="callArea()">
+                                            </td>
+                                        </tr>
+                                        <tr>    
+                                            <td>
+                                                <label for="A">\(A\)</label>
+                                            </td>
+                                            <td style="width: 20%;">
+                                                <p>Area</p>
+                                            </td>
+                                            <td>
+                                                <input id="A" type="number" oninput="callArea()">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>
+                                    <video autoplay muted loop>
+                                        <source src="../assets/media/videos/geo/1080p60/square/MySquare.mp4" type="video/mp4" />
+                                    </video>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="form__result">
+                        <p class="eq-align">
+                            <p id="area"></p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <ul class="social-icon">
+                <li><a href="https://wa.me/628159293778/"><i class="ri-whatsapp-line"></i></a></li>
+                <li><a href="https://www.instagram.com/aaronh28/"><i class="ri-instagram-line"></i></a></li>
+                <li><a href="https://github.com/44120N"><i class="ri-github-fill"></i></a></li>
+                <li><a href="https://discordapp.com/users/793773283451469844"><i class="ri-discord-line"></i></a></li>
+            </ul>
+            <p style="margin-bottom: 0;">© Copyright 2023 | All Rights Reserved</p>
+            <p>Aaron Hartono</p>
+        </footer>
+        
+        <!-- scripts -->
+        <script src="../script/navbar.js"></script>
+        <script src="../script/variables.js"></script>
+        <script src="script/perimeter.js"></script>
+        <script src="script/diagonal.js"></script>
+        <script src="script/area.js"></script>
+    </body>
+</html>

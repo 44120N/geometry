@@ -1,0 +1,8 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/Pythagoras/3529212410_3895820033_223132457.mp4'
+file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/Pythagoras/3040924799_255102487_4262195109.mp4'
+file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/Pythagoras/3040924799_4237503615_3125257411.mp4'
+file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/Pythagoras/3040924799_2328717450_4087730345.mp4'
+file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/Pythagoras/3040924799_1141282389_679948235.mp4'
+file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/Pythagoras/3040924799_3134568322_3538331080.mp4'
+file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/Pythagoras/3040924799_1141282389_3914437625.mp4'
