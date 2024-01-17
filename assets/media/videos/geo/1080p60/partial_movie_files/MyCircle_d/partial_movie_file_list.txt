@@ -1,6 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyCircle_d/3529212410_435463160_223132457.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyCircle_d/3040924799_3639912155_2059980627.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyCircle_d/3040924799_3471656220_3819140998.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyCircle_d/3040924799_696444109_2992567551.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyCircle_d/3040924799_3171847048_2192638029.mp4'
