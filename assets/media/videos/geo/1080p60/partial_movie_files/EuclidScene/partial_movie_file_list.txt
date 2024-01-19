@@ -1,8 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/EuclidScene/3529212410_2792375465_223132457.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/EuclidScene/3040924799_2555111794_2630188704.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/EuclidScene/3040924799_3107743795_35441286.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/EuclidScene/3040924799_2785870570_71011685.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/EuclidScene/3040924799_1090393723_2396946475.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/EuclidScene/3040924799_3257661881_2941413992.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/EuclidScene/3040924799_397802716_1579348041.mp4'

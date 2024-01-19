@@ -1,4 +1,0 @@
-# This file is used internally by FFMPEG.
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyTriangle_abc_line/3529212410_2419585475_223132457.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyTriangle_abc_line/3040924799_696444109_2956158974.mp4'
-file 'file:C:/Users/sumito/OneDrive/Documents/geometry/assets/media/videos/geo/1080p60/partial_movie_files/MyTriangle_abc_line/3040924799_3393686166_1221046795.mp4'
