@@ -47,11 +47,6 @@ body{
     min-height: 100vh;
 }
 
-table img{
-    width: auto;
-    height: 55vh;
-}
-
 ul{
     list-style: none;
 }
