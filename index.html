@@ -1,95 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="shortcut icon" href="assets/biru.svg">
-        <!-- remixIcon -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
-        <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-        <!-- MathJax -->
-        <script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"></script>
-        <!-- styleSheet -->
-        <link rel="stylesheet" href="style/style.css">
-        <title>Geometry</title>
-    </head>
-    <body>
-        <div class="black-bg">
-            <header class="header">
-            <nav class="nav container">
-                <div class="nav__data">
-                    <a href="https://github.com/44120N" class="nav__logo">
-                        <img src="assets/putih.svg">
-                    </a>
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line nav__burger"></i>
-                        <i class="ri-close-line nav__close"></i>
-                    </div>
-                </div>
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <!-- <li><a href="../geometry/index.html" class="nav__link">Home</a></li>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/biru.svg" />
+    <!-- remixIcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- MathJax -->
+    <script
+      type="text/javascript"
+      async=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Geometry</title>
+  </head>
+  <body>
+    <div class="black-bg">
+      <header class="header">
+        <nav class="nav container">
+          <div class="nav__data">
+            <a href="https://github.com/44120N" class="nav__logo">
+              <img src="assets/putih.svg" />
+            </a>
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line nav__burger"></i>
+              <i class="ri-close-line nav__close"></i>
+            </div>
+          </div>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <!-- <li><a href="../geometry/index.html" class="nav__link">Home</a></li>
                         <li><a href="../geometry/triangle/triangle.html" class="nav__link">Triangle</a></li>
                         <li><a href="../geometry/square/square.html" class="nav__link">Square</a></li>
                         <li><a href="../geometry/rectangle/rectangle.html" class="nav__link">Rectangle</a></li>
                         <li><a href="../geometry/circle/circle.html" class="nav__link">Circle</a></li> -->
-                        <li><a href="index.html" class="nav__link">Home</a></li>
-                        <li><a href="triangle/triangle.html" class="nav__link">Triangle</a></li>
-                        <li><a href="square/square.html" class="nav__link">Square</a></li>
-                        <li><a href="rectangle/rectangle.html" class="nav__link">Rectangle</a></li>
-                        <li><a href="circle/circle.html" class="nav__link">Circle</a></li>
-                    </ul>
-                </div>
-            </nav>
-            </header>
-    
-            <div class="banner">
-                <video autoplay muted loop>
-                    <source src="assets/media/videos/geo/1080p60/MyScene.mp4" type="video/mp4" />
-                </video>
-                <div class="caption">
-                    <p id="title">Geometry</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="about">
-            <div class="content">
-                <div class="title">
-                    Geometry
-                </div>
-                <div class="lineh"></div>
-                <p style="width: 80%; margin: 3vh auto 3vh auto;">
-                    Geometry is a branch of mathematics that focuses on the properties and relationships of points, lines, angles, surfaces, and solids. It plays a crucial role in understanding the spatial relationships and structures of objects in our physical world. The word <b>geometry</b> itself comes from the Greek words <i>geo</i>, meaning Earth, and <i>metron</i>, meaning measurement. Geometry has numerous applications in various fields, including physics, engineering, computer graphics, architecture, and art. It provides a foundation for understanding spatial relationships and solving real-world problems.
-                </p>
-                <div class="euclid" style="width: 80%; display: flex; margin: 3vh auto 3vh auto;">
-                    <p>
-                        Geometry, as we know it today, owes much of its systematic development to Euclid, often referred to as the "Father of Geometry." Euclid was an ancient Greek mathematician who lived around 300 BCE and compiled a comprehensive collection of geometric knowledge known as "Elements." This influential work consisted of thirteen books covering various aspects of geometry, including number theory and the theory of proportions. Euclid's Elements provided a logical and rigorous framework for understanding the principles of geometry, introducing axioms and postulates as the foundation for geometric reasoning. The significance of Euclid's contributions extends beyond his mathematical prowess; his systematic approach and emphasis on logical deduction laid the groundwork for the axiomatic method, which became a standard in mathematical reasoning for centuries. Euclid's enduring influence is evident in the fact that Elements remained a fundamental textbook in geometry for over two millennia, shaping the way generations of mathematicians approached the study of spatial relationships and geometric concepts.
-                    </p>
-                    <img style="width:15rem; height: 15rem; margin: 0 3vw 0 3vw;" src="https://cdn.britannica.com/46/8446-050-BC92B998/Euclid-woodcut-1584.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-        <footer class="footer">
-            <div class="waves">
-                <div class="wave" id="wave1"></div>
-                <div class="wave" id="wave2"></div>
-                <div class="wave" id="wave3"></div>
-                <div class="wave" id="wave4"></div>
-            </div>
-            <ul class="social-icon">
-                <li><a href="https://wa.me/628159293778/"><i class="ri-whatsapp-line"></i></a></li>
-                <li><a href="https://www.instagram.com/aaronh28/"><i class="ri-instagram-line"></i></a></li>
-                <li><a href="https://github.com/44120N"><i class="ri-github-fill"></i></a></li>
-                <li><a href="https://discordapp.com/users/793773283451469844"><i class="ri-discord-line"></i></a></li>
+              <li><a href="index.html" class="nav__link">Home</a></li>
+              <li>
+                <a href="triangle/triangle.html" class="nav__link">Triangle</a>
+              </li>
+              <li><a href="square/square.html" class="nav__link">Square</a></li>
+              <li>
+                <a href="rectangle/rectangle.html" class="nav__link"
+                  >Rectangle</a
+                >
+              </li>
+              <li><a href="circle/circle.html" class="nav__link">Circle</a></li>
+              <div class="theme">
+                <a
+                  onmouseenter="hoverToggle()"
+                  onmouseleave="hoverToggle()"
+                  id="toggle-theme"
+                  ><i class="ri-sun-fill" id="theme-icon"></i
+                ></a>
+              </div>
             </ul>
-            <p style="margin-bottom: 0;">© Copyright 2023 | All Rights Reserved</p>
-            <p>Aaron Hartono</p>
-        </footer>
-        
-        <!-- navBar -->
-        <script src="script/navbar.js"></script>
-    </body>
+          </div>
+        </nav>
+      </header>
+
+      <div class="banner">
+        <video autoplay muted loop>
+          <source
+            src="assets/media/videos/geo/1080p60/MyScene.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="caption">
+          <p id="title">Geometry</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="content">
+        <div class="title">Geometry</div>
+        <div class="lineh"></div>
+        <p style="width: 80%; margin: 3vh auto 3vh auto">
+          Geometry is a branch of mathematics that focuses on the properties and
+          relationships of points, lines, angles, surfaces, and solids. It plays
+          a crucial role in understanding the spatial relationships and
+          structures of objects in our physical world. The word
+          <b>geometry</b> itself comes from the Greek words <i>geo</i>, meaning
+          Earth, and <i>metron</i>, meaning measurement. Geometry has numerous
+          applications in various fields, including physics, engineering,
+          computer graphics, architecture, and art. It provides a foundation for
+          understanding spatial relationships and solving real-world problems.
+        </p>
+        <div
+          class="euclid"
+          style="width: 80%; display: flex; margin: 3vh auto 3vh auto"
+        >
+          <p>
+            Geometry, as we know it today, owes much of its systematic
+            development to Euclid, often referred to as the "Father of
+            Geometry." Euclid was an ancient Greek mathematician who lived
+            around 300 BCE and compiled a comprehensive collection of geometric
+            knowledge known as "Elements." This influential work consisted of
+            thirteen books covering various aspects of geometry, including
+            number theory and the theory of proportions. Euclid's Elements
+            provided a logical and rigorous framework for understanding the
+            principles of geometry, introducing axioms and postulates as the
+            foundation for geometric reasoning. The significance of Euclid's
+            contributions extends beyond his mathematical prowess; his
+            systematic approach and emphasis on logical deduction laid the
+            groundwork for the axiomatic method, which became a standard in
+            mathematical reasoning for centuries. Euclid's enduring influence is
+            evident in the fact that Elements remained a fundamental textbook in
+            geometry for over two millennia, shaping the way generations of
+            mathematicians approached the study of spatial relationships and
+            geometric concepts.
+          </p>
+          <img
+            style="width: 15rem; height: 15rem; margin: 0 3vw 0 3vw"
+            src="https://cdn.britannica.com/46/8446-050-BC92B998/Euclid-woodcut-1584.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li>
+          <a href="https://wa.me/628159293778/"
+            ><i class="ri-whatsapp-line"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/aaronh28/"
+            ><i class="ri-instagram-line"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/44120N"><i class="ri-github-fill"></i></a>
+        </li>
+        <li>
+          <a href="https://discordapp.com/users/793773283451469844"
+            ><i class="ri-discord-line"></i
+          ></a>
+        </li>
+      </ul>
+      <p style="margin-bottom: 0">© Copyright 2023 | All Rights Reserved</p>
+      <p>Aaron Hartono</p>
+    </footer>
+
+    <!-- navBar -->
+    <script src="script/navbar.js"></script>
+    <!-- theme -->
+    <script src="script/theme.js"></script>
+  </body>
 </html>

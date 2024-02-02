@@ -542,3 +542,15 @@ table video {
   > .nav__link:hover {
   background-color: var(--second-color);
 }
+
+.theme {
+  font-size: 2vh;
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme #toggle-theme {
+  cursor: pointer;
+}

@@ -3,6 +3,7 @@
 > MAJOR:
 
     - Added Pythagoras in triangle.js
+    - Added light/dark theme toggle
 
 > MINOR:
 
