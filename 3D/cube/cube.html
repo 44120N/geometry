@@ -38,20 +38,24 @@
             <ul class="nav__list">
               <li><a href="../index.html" class="nav__link">Home</a></li>
               <li>
-                <a href="../triangle/triangle.html" class="nav__link"
-                  >Triangle</a
+                <a href="../cube/cube.html" class="nav__link">Cube</a>
+              </li>
+              <li>
+                <a href="../cuboid/cuboid.html" class="nav__link">Cuboid</a>
+              </li>
+              <li>
+                <a href="../cylinder/cylinder.html" class="nav__link"
+                  >Cylinder</a
                 >
               </li>
               <li>
-                <a href="../square/square.html" class="nav__link">Square</a>
+                <a href="../circle/circle.html" class="nav__link">Pyramid</a>
               </li>
               <li>
-                <a href="../rectangle/rectangle.html" class="nav__link"
-                  >Rectangle</a
-                >
+                <a href="../sphere/sphere.html" class="nav__link">Sphere</a>
               </li>
               <li>
-                <a href="../circle/circle.html" class="nav__link">Circle</a>
+                <a href="../prism/prism.html" class="nav__link">Prism</a>
               </li>
             </ul>
           </div>
@@ -65,7 +69,7 @@
           />
         </video>
         <div class="caption">
-          <p id="title">Square</p>
+          <p id="title">Rectangle</p>
         </div>
       </div>
     </div>
@@ -75,7 +79,7 @@
         <div class="title">Perimeter</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[P = 4a\] </span>
+          <span class="form__equation"> \[P = 2(l+w)\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -83,14 +87,29 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="aP">\(a\)</label>
+                        <label for="lP">\(l\)</label>
                       </td>
                       <td style="width: 20%">
-                        <p>side</p>
+                        <p>length</p>
                       </td>
                       <td>
                         <input
-                          id="aP"
+                          id="lP"
+                          type="number"
+                          oninput="callPerimeter()"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="wP">\(w\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>width</p>
+                      </td>
+                      <td>
+                        <input
+                          id="wP"
                           type="number"
                           oninput="callPerimeter()"
                         />
@@ -112,7 +131,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../assets/media/videos/geo/1080p60/square/MySquare_line.mp4"
+                      src="../assets/media/videos/geo/1080p60/rectangle/MyRectangle_line.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -131,7 +150,7 @@
         <div class="title">Diagonal</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[A = \sqrt{2}a\] </span>
+          <span class="form__equation"> \[d = \sqrt{l^2+w^2}\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -139,13 +158,24 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="aD">\(a\)</label>
+                        <label for="lD">\(l\)</label>
                       </td>
                       <td style="width: 20%">
-                        <p>side</p>
+                        <p>length</p>
                       </td>
                       <td>
-                        <input id="aD" type="number" oninput="callDiagonal()" />
+                        <input id="lD" type="number" oninput="callDiagonal()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="wD">\(w\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>width</p>
+                      </td>
+                      <td>
+                        <input id="wD" type="number" oninput="callDiagonal()" />
                       </td>
                     </tr>
                     <tr>
@@ -164,7 +194,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../assets/media/videos/geo/1080p60/square/MySquare_d.mp4"
+                      src="../assets/media/videos/geo/1080p60/rectangle/MyRectangle_d.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -183,7 +213,7 @@
         <div class="title">Area</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[A = a^2\] </span>
+          <span class="form__equation"> \[A = lw\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -191,13 +221,24 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="aA">\(a\)</label>
+                        <label for="lA">\(l\)</label>
                       </td>
                       <td style="width: 20%">
-                        <p>side</p>
+                        <p>length</p>
                       </td>
                       <td>
-                        <input id="aA" type="number" oninput="callArea()" />
+                        <input id="lA" type="number" oninput="callArea()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="wA">\(w\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>width</p>
+                      </td>
+                      <td>
+                        <input id="wA" type="number" oninput="callArea()" />
                       </td>
                     </tr>
                     <tr>
@@ -216,7 +257,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../assets/media/videos/geo/1080p60/square/MySquare.mp4"
+                      src="../assets/media/videos/geo/1080p60/rectangle/MyRectangle.mp4"
                       type="video/mp4"
                     />
                   </video>
