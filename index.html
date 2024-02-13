@@ -41,9 +41,40 @@
                         <li><a href="../geometry/square/square.html" class="nav__link">Square</a></li>
                         <li><a href="../geometry/rectangle/rectangle.html" class="nav__link">Rectangle</a></li>
                         <li><a href="../geometry/circle/circle.html" class="nav__link">Circle</a></li> -->
-              <li><a href="index.html" class="nav__link">Home</a></li>
-              <li>
-                <a href="triangle/triangle.html" class="nav__link">Triangle</a>
+              <li><a href="./index.html" class="nav__link">Home</a></li>
+              <li class="dropdown__item">
+                <div class="nav__link">Polygon</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="./polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Triangles</a
+                    >
+                  </li>
+                  <li class="dropdown__subitem">
+                    <div class="dropdown__link">Quadrilaterals</div>
+                    <ul class="dropdown__submenu">
+                      <li>
+                        <a
+                          href="./polygon/quadrilateral/parallelogram/square/square.html"
+                          class="dropdown__sublink"
+                          >Square</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="./polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Other</a
+                    >
+                  </li>
+                </ul>
               </li>
               <li><a href="square/square.html" class="nav__link">Square</a></li>
               <li>
@@ -155,11 +186,26 @@
       </ul>
       <p style="margin-bottom: 0">© Copyright 2023 | All Rights Reserved</p>
       <p>Aaron Hartono</p>
+      <div id="google_translate_element"></div>
     </footer>
 
     <!-- navBar -->
     <script src="script/navbar.js"></script>
     <!-- theme -->
     <script src="script/theme.js"></script>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
   </body>
 </html>
