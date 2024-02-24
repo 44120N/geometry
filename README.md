@@ -6,8 +6,13 @@ This branch is dedicated to updating `main`
 
 > MAJOR:
 
-    - Rearranged the folder structure.
+    - Rearranged the folder structure
+    - Added Trapezoid
 
 > MINOR:
 
-    -
+    - implemented google translate API
+
+### IMPORTANT NOTE (FOR FUTURE PATCH)
+
+go ctrl+f "./lobby" replace it pls

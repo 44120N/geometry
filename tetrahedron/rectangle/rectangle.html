@@ -26,7 +26,7 @@
       <header class="header">
         <nav class="nav container">
           <div class="nav__data">
-            <a href="https://github.com/44120N" class="nav__logo">
+            <a href="./lobby.html" class="nav__logo">
               <img src="../../assets/putih.svg" />
             </a>
             <div class="nav__toggle" id="nav-toggle">
@@ -36,31 +36,140 @@
           </div>
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
-              <li><a href="../index.html" class="nav__link">Home</a></li>
+              <!-- <li><a href="../geometry/index.html" class="nav__link">Home</a></li>
+                        <li><a href="../geometry/triangle/triangle.html" class="nav__link">Triangle</a></li>
+                        <li><a href="../geometry/square/square.html" class="nav__link">Square</a></li>
+                        <li><a href="../geometry/rectangle/rectangle.html" class="nav__link">Rectangle</a></li>
+                        <li><a href="../geometry/circle/circle.html" class="nav__link">Circle</a></li> -->
               <li>
-                <a href="../triangle/triangle.html" class="nav__link"
-                  >Triangle</a
+                <a href="../../index.html" class="nav__link" translate="no"
+                  >Home</a
                 >
               </li>
-              <li>
-                <a href="../square/square.html" class="nav__link">Square</a>
+              <li class="dropdown__item">
+                <div class="nav__link">Triangle</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="../../../triangle/basic/B_triangle.html"
+                      class="nav__link--dropdown"
+                      >Basic</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../triangle/advance/A_triangle.html"
+                      class="nav__link--dropdown"
+                      translate="no"
+                      >Advance</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="../rectangle/rectangle.html" class="nav__link"
-                  >Rectangle</a
-                >
+              <li class="dropdown__item">
+                <div class="nav__link">Tetrahedron</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="../../tetrahedron/square/square.html"
+                      class="nav__link--dropdown"
+                      >Square</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../tetrahedron/rectangle/rectangle.html"
+                      class="nav__link--dropdown"
+                      >Rectangle</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Rhombus</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Kite</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../tetrahedron/trapezoid/trapezoid.html"
+                      class="nav__link--dropdown"
+                      >Trapezoid</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Parallelogram</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="../circle/circle.html" class="nav__link">Circle</a>
+              <li class="dropdown__item">
+                <div class="nav__link">Polygon</div>
+                <ul class="dropdown__menu">
+                  <li class="dropdown__subitem">
+                    <div class="dropdown__link">Quadrilaterals</div>
+                    <ul class="dropdown__submenu">
+                      <li>
+                        <a
+                          href="./polygon/quadrilateral/parallelogram/square/square.html"
+                          class="dropdown__sublink"
+                          >Square</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Other</a
+                    >
+                  </li>
+                </ul>
               </li>
+              <li class="dropdown__item">
+                <div class="nav__link">Circle</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a href="" class="nav__link--dropdown">Basic</a>
+                  </li>
+                  <li>
+                    <a href="" class="nav__link--dropdown" translate="no"
+                      >Advance</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <div class="theme">
+                <a
+                  onmouseenter="hoverToggle()"
+                  onmouseleave="hoverToggle()"
+                  id="toggle-theme"
+                  ><i class="ri-sun-fill" id="theme-icon"></i
+                ></a>
+              </div>
             </ul>
           </div>
         </nav>
       </header>
+
       <div class="banner">
         <video autoplay muted loop>
           <source
-            src="../assets/media/videos/geo/1080p60/MyScene.mp4"
+            src="assets/media/videos/geo/1080p60/MyScene.mp4"
             type="video/mp4"
           />
         </video>
@@ -75,7 +184,7 @@
         <div class="title">Perimeter</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[P = 2(l+w)\] </span>
+          <span class="form__equation" translate="no"> \[P = 2(l+w)\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -83,7 +192,7 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="lP">\(l\)</label>
+                        <label for="lP" translate="no">\(l\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>length</p>
@@ -98,7 +207,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="wP">\(w\)</label>
+                        <label for="wP" translate="no">\(w\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>width</p>
@@ -113,7 +222,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="P">\(P\)</label>
+                        <label for="P" translate="no">\(P\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>Perimeter</p>
@@ -127,7 +236,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../assets/media/videos/geo/1080p60/rectangle/MyRectangle_line.mp4"
+                      src="../../assets/media/videos/geo/1080p60/rectangle/MyRectangle_line.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -146,7 +255,9 @@
         <div class="title">Diagonal</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[d = \sqrt{l^2+w^2}\] </span>
+          <span class="form__equation" translate="no">
+            \[d = \sqrt{l^2+w^2}\]
+          </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -154,7 +265,7 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="lD">\(l\)</label>
+                        <label for="lD" translate="no">\(l\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>length</p>
@@ -165,7 +276,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="wD">\(w\)</label>
+                        <label for="wD" translate="no">\(w\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>width</p>
@@ -176,7 +287,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="d">\(d\)</label>
+                        <label for="d" translate="no">\(d\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>diagonal</p>
@@ -190,7 +301,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../assets/media/videos/geo/1080p60/rectangle/MyRectangle_d.mp4"
+                      src="../../assets/media/videos/geo/1080p60/rectangle/MyRectangle_d.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -209,7 +320,7 @@
         <div class="title">Area</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[A = lw\] </span>
+          <span class="form__equation" translate="no"> \[A = lw\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -217,7 +328,7 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="lA">\(l\)</label>
+                        <label for="lA" translate="no">\(l\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>length</p>
@@ -228,7 +339,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="wA">\(w\)</label>
+                        <label for="wA" translate="no">\(w\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>width</p>
@@ -239,7 +350,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="A">\(A\)</label>
+                        <label for="A" translate="no">\(A\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>Area</p>
@@ -253,7 +364,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../assets/media/videos/geo/1080p60/rectangle/MyRectangle.mp4"
+                      src="../../assets/media/videos/geo/1080p60/rectangle/MyRectangle.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -297,13 +408,29 @@
           ></a>
         </li>
       </ul>
-      <p style="margin-bottom: 0">© Copyright 2023 | All Rights Reserved</p>
-      <p>Aaron Hartono</p>
+      <p style="margin-bottom: 2vh" translate="no">
+        © Zenith Technologies 2024 | All Rights Reserved
+      </p>
+      <div id="google_translate_element"></div>
     </footer>
 
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
     <!-- scripts -->
-    <script src="../script/navbar.js"></script>
-    <script src="../script/variables.js"></script>
+    <script src="../../script/navbar.js"></script>
+    <script src="../../script/variables.js"></script>
     <script src="script/perimeter.js"></script>
     <script src="script/diagonal.js"></script>
     <script src="script/area.js"></script>
