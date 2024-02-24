@@ -16,3 +16,5 @@ This branch is dedicated to updating `main`
 ### IMPORTANT NOTE (FOR FUTURE PATCH)
 
 go ctrl+f "./lobby" replace it pls
+
+(c) Zenith Technologies
