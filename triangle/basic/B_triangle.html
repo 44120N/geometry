@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="../assets/biru.svg" />
+    <link rel="shortcut icon" href="../../assets/biru.svg" />
     <!-- remixIcon -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
@@ -26,7 +26,7 @@
       <header class="header">
         <nav class="nav container">
           <div class="nav__data">
-            <a href="https://github.com/44120N" class="nav__logo">
+            <a href="./lobby.html" class="nav__logo">
               <img src="../../assets/putih.svg" />
             </a>
             <div class="nav__toggle" id="nav-toggle">
@@ -36,36 +36,133 @@
           </div>
           <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
-              <li><a href="../../index.html" class="nav__link">Home</a></li>
+              <!-- <li><a href="../geometry/index.html" class="nav__link">Home</a></li>
+                        <li><a href="../geometry/triangle/triangle.html" class="nav__link">Triangle</a></li>
+                        <li><a href="../geometry/square/square.html" class="nav__link">Square</a></li>
+                        <li><a href="../geometry/rectangle/rectangle.html" class="nav__link">Rectangle</a></li>
+                        <li><a href="../geometry/circle/circle.html" class="nav__link">Circle</a></li> -->
               <li>
-                <a href="../triangle/triangle.html" class="nav__link"
-                  >Triangle</a
+                <a href="../../index.html" class="nav__link" translate="no"
+                  >Home</a
                 >
               </li>
-              <li>
-                <a href="../square/square.html" class="nav__link">Square</a>
+              <li class="dropdown__item">
+                <div class="nav__link">Triangle</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="../../../triangle/basic/B_triangle.html"
+                      class="nav__link--dropdown"
+                      >Basic</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../triangle/advance/A_triangle.html"
+                      class="nav__link--dropdown"
+                      translate="no"
+                      >Advance</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="../rectangle/rectangle.html" class="nav__link"
-                  >Rectangle</a
-                >
+              <li class="dropdown__item">
+                <div class="nav__link">Tetrahedron</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="../../tetrahedron/square/square.html"
+                      class="nav__link--dropdown"
+                      >Square</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../tetrahedron/rectangle/rectangle.html"
+                      class="nav__link--dropdown"
+                      >Rectangle</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Rhombus</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Kite</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../tetrahedron/trapezoid/trapezoid.html"
+                      class="nav__link--dropdown"
+                      >Trapezoid</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Parallelogram</a
+                    >
+                  </li>
+                </ul>
               </li>
-              <li>
-                <a href="../circle/circle.html" class="nav__link">Circle</a>
+              <li class="dropdown__item">
+                <div class="nav__link">Polygon</div>
+                <ul class="dropdown__menu">
+                  <li class="dropdown__subitem">
+                    <div class="dropdown__link">Quadrilaterals</div>
+                    <ul class="dropdown__submenu">
+                      <li>
+                        <a
+                          href="./polygon/quadrilateral/parallelogram/square/square.html"
+                          class="dropdown__sublink"
+                          >Square</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Other</a
+                    >
+                  </li>
+                </ul>
               </li>
+              <li><a href="circle/circle.html" class="nav__link">Circle</a></li>
+              <div class="theme">
+                <a
+                  onmouseenter="hoverToggle()"
+                  onmouseleave="hoverToggle()"
+                  id="toggle-theme"
+                  ><i class="ri-sun-fill" id="theme-icon"></i
+                ></a>
+              </div>
             </ul>
           </div>
         </nav>
       </header>
+
       <div class="banner">
         <video autoplay muted loop>
           <source
-            src="../../assets/media/videos/geo/1080p60/MyScene.mp4"
+            src="assets/media/videos/geo/1080p60/MyScene.mp4"
             type="video/mp4"
           />
         </video>
         <div class="caption">
-          <p id="title">Triangle</p>
+          <p id="title">Basic Triangle</p>
         </div>
       </div>
     </div>
@@ -75,7 +172,7 @@
         <div class="title">Perimeter</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[P = a + b + c\] </span>
+          <span class="form__equation" translate="no"> \[P = a + b + c\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -83,7 +180,7 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="a">\(a\)</label>
+                        <label for="a" translate="no">\(a\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -94,7 +191,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="b">\(b\)</label>
+                        <label for="b" translate="no">\(b\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -105,7 +202,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="c">\(c\)</label>
+                        <label for="c" translate="no">\(c\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -116,7 +213,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="P">\(P\)</label>
+                        <label for="P" translate="no">\(P\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>Perimeter</p>
@@ -149,7 +246,9 @@
         <div class="title">Area</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[A = \frac{1}{2} bh\] </span>
+          <span class="form__equation" translate="no">
+            \[A = \frac{1}{2} bh\]
+          </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -157,7 +256,7 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="base">\(b\)</label>
+                        <label for="base" translate="no">\(b\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>base</p>
@@ -168,7 +267,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="height">\(h\)</label>
+                        <label for="height" translate="no">\(h\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>height</p>
@@ -179,7 +278,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="A">\(A\)</label>
+                        <label for="A" translate="no">\(A\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>Area</p>
@@ -209,12 +308,16 @@
         </div>
       </div>
       <div class="content">
-        <div class="title">Heron</div>
+        <div class="title" translate="no">Heron</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[s = \frac{a + b + c}{2}\] </span>
+          <span class="form__equation" translate="no">
+            \[s = \frac{a + b + c}{2}\]
+          </span>
           <br />
-          <span class="form__equation"> \[A = \sqrt{s(s-a)(s-b)(s-c)}\] </span>
+          <span class="form__equation" translate="no">
+            \[A = \sqrt{s(s-a)(s-b)(s-c)}\]
+          </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -222,7 +325,7 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="aH">\(a\)</label>
+                        <label for="aH" translate="no">\(a\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -233,7 +336,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="bH">\(b\)</label>
+                        <label for="bH" translate="no">\(b\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -244,7 +347,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="cH">\(c\)</label>
+                        <label for="cH" translate="no">\(c\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -255,7 +358,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="H">\(A\)</label>
+                        <label for="H" translate="no">\(A\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>Area</p>
@@ -288,7 +391,9 @@
         <div class="title">Pythagoras</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation"> \[a^2 + b^2 = c^2\] </span>
+          <span class="form__equation" translate="no">
+            \[a^2 + b^2 = c^2\]
+          </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -296,7 +401,7 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="aPy">\(a\)</label>
+                        <label for="aPy" translate="no">\(a\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -311,7 +416,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="bPy">\(b\)</label>
+                        <label for="bPy" translate="no">\(b\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -326,7 +431,7 @@
                     </tr>
                     <tr>
                       <td>
-                        <label for="cPy">\(c\)</label>
+                        <label for="cPy" translate="no">\(c\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
@@ -388,9 +493,24 @@
           ></a>
         </li>
       </ul>
-      <p style="margin-bottom: 0">© Copyright 2024 | All Rights Reserved</p>
-      <p>Aaron Hartono</p>
+      <p style="margin-bottom: 2vh" translate="no">
+        © Zenith Technologies 2024 | All Rights Reserved
+      </p>
+      <div id="google_translate_element"></div>
     </footer>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+    <script
+      type="text/javascript"
+      src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
 
     <!-- scripts -->
     <script src="../../script/navbar.js"></script>

@@ -709,3 +709,12 @@ table video {
   -moz-box-shadow: -1px 13px 41px -20px rgba(66, 68, 90, 1);
   box-shadow: -1px 13px 41px -20px rgba(66, 68, 90, 1);
 }
+
+body > .skiptranslate > iframe.skiptranslate {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+body {
+  top: 0px !important;
+}

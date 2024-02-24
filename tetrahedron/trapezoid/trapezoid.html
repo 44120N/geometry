@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../assets/biru.svg" />
+    <!-- remixIcon -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- MathJax -->
+    <script
+      type="text/javascript"
+      async=""
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML"
+    ></script>
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="../../style/style.css" />
+    <title>Geometry</title>
+  </head>
+  <body>
+    <div class="black-bg">
+      <header class="header">
+        <nav class="nav container">
+          <div class="nav__data">
+            <a href="./lobby.html" class="nav__logo">
+              <img src="../../assets/putih.svg" />
+            </a>
+            <div class="nav__toggle" id="nav-toggle">
+              <i class="ri-menu-line nav__burger"></i>
+              <i class="ri-close-line nav__close"></i>
+            </div>
+          </div>
+          <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list">
+              <!-- <li><a href="../geometry/index.html" class="nav__link">Home</a></li>
+                          <li><a href="../geometry/triangle/triangle.html" class="nav__link">Triangle</a></li>
+                          <li><a href="../geometry/square/square.html" class="nav__link">Square</a></li>
+                          <li><a href="../geometry/rectangle/rectangle.html" class="nav__link">Rectangle</a></li>
+                          <li><a href="../geometry/circle/circle.html" class="nav__link">Circle</a></li> -->
+              <li>
+                <a href="../../index.html" class="nav__link" translate="no"
+                  >Home</a
+                >
+              </li>
+              <li class="dropdown__item">
+                <div class="nav__link">Triangle</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="../../../triangle/basic/B_triangle.html"
+                      class="nav__link--dropdown"
+                      >Basic</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../triangle/advance/A_triangle.html"
+                      class="nav__link--dropdown"
+                      translate="no"
+                      >Advance</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__item">
+                <div class="nav__link">Tetrahedron</div>
+                <ul class="dropdown__menu">
+                  <li>
+                    <a
+                      href="../../tetrahedron/square/square.html"
+                      class="nav__link--dropdown"
+                      >Square</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../tetrahedron/rectangle/rectangle.html"
+                      class="nav__link--dropdown"
+                      >Rectangle</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Rhombus</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Kite</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../tetrahedron/trapezoid/trapezoid.html"
+                      class="nav__link--dropdown"
+                      >Trapezoid</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Parallelogram</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="dropdown__item">
+                <div class="nav__link">Polygon</div>
+                <ul class="dropdown__menu">
+                  <li class="dropdown__subitem">
+                    <div class="dropdown__link">Quadrilaterals</div>
+                    <ul class="dropdown__submenu">
+                      <li>
+                        <a
+                          href="./polygon/quadrilateral/parallelogram/square/square.html"
+                          class="dropdown__sublink"
+                          >Square</a
+                        >
+                      </li>
+                      <li>
+                        <a href=""></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="../../../polygon/triangle/triangle.html"
+                      class="nav__link--dropdown"
+                      >Other</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="circle/circle.html" class="nav__link">Circle</a></li>
+              <div class="theme">
+                <a
+                  onmouseenter="hoverToggle()"
+                  onmouseleave="hoverToggle()"
+                  id="toggle-theme"
+                  ><i class="ri-sun-fill" id="theme-icon"></i
+                ></a>
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <div class="banner">
+        <video autoplay muted loop>
+          <source
+            src="assets/media/videos/geo/1080p60/MyScene.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div class="caption">
+          <p id="title">Trapezoid</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="content">
+        <div class="title">Perimeter</div>
+        <div class="lineh"></div>
+        <div class="form">
+          <span class="form__equation"> \[P = a + b + c + d\] </span>
+          <table style="width: 100%; table-layout: fixed">
+            <tbody>
+              <tr>
+                <td>
+                  <table style="margin: 0">
+                    <tr>
+                      <td>
+                        <label for="a">\(a\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>base</p>
+                      </td>
+                      <td>
+                        <input id="a" type="number" oninput="callPerimeter()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="b">\(b\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>base</p>
+                      </td>
+                      <td>
+                        <input id="b" type="number" oninput="callPerimeter()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="c">\(c\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input id="c" type="number" oninput="callPerimeter()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="d">\(d\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input id="d" type="number" oninput="callPerimeter()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="P">\(P\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>Perimeter</p>
+                      </td>
+                      <td>
+                        <input id="P" type="number" oninput="callPerimeter()" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <video autoplay muted loop>
+                    <!-- change here -->
+                    <source
+                      src="../../assets/media/videos/geo/1080p60/"
+                      type="video/mp4"
+                    />
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="form__result">
+            <div class="eq-align">
+              <p id="perimeter"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">Area</div>
+        <div class="lineh"></div>
+        <div class="form">
+          <span class="form__equation"> \[A = \frac{h(a + b)}{2} \] </span>
+          <table style="width: 100%; table-layout: fixed">
+            <tbody>
+              <tr>
+                <td>
+                  <table style="margin: 0">
+                    <tr>
+                      <td>
+                        <label for="aA">\(a\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>base</p>
+                      </td>
+                      <td>
+                        <input id="aA" type="number" oninput="callArea()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="bA">\(b\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>base</p>
+                      </td>
+                      <td>
+                        <input id="bA" type="number" oninput="callArea()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="height">\(h\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>height</p>
+                      </td>
+                      <td>
+                        <input id="height" type="number" oninput="callArea()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="A">\(A\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>Area</p>
+                      </td>
+                      <td>
+                        <input id="A" type="number" oninput="callArea()" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <video autoplay muted loop>
+                    <!-- change here -->
+                    <source
+                      src="../../assets/media/videos/geo/1080p60/"
+                      type="video/mp4"
+                    />
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="form__result">
+            <div class="eq-align">
+              <p id="area"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <ul class="social-icon">
+        <li>
+          <a href="https://wa.me/628159293778/"
+            ><i class="ri-whatsapp-line"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/aaronh28/"
+            ><i class="ri-instagram-line"></i
+          ></a>
+        </li>
+        <li>
+          <a href="https://github.com/44120N"><i class="ri-github-fill"></i></a>
+        </li>
+        <li>
+          <a href="https://discordapp.com/users/793773283451469844"
+            ><i class="ri-discord-line"></i
+          ></a>
+        </li>
+      </ul>
+      <p style="margin-bottom: 2vh" translate="no">
+        © Zenith Technologies 2024 | All Rights Reserved
+      </p>
+      <div id="google_translate_element"></div>
+    </footer>
+
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
+      }
+    </script>
+
+    <script
+      type="text/javascript"
+      src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+
+    <!-- scripts -->
+    <script src="../../script/navbar.js"></script>
+    <script src="../../script/variables.js"></script>
+    <script src="./script/perimeter.js"></script>
+    <script src="./script/area.js"></script>
+    <script src="./script/heron.js"></script>
+    <script src="./script/pythagoras.js"></script>
+  </body>
+</html>

@@ -162,7 +162,7 @@
           />
         </video>
         <div class="caption">
-          <p id="title">Square</p>
+          <p id="title">Advance Triangle</p>
         </div>
       </div>
     </div>
@@ -172,7 +172,7 @@
         <div class="title">Perimeter</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation" translate="no"> \[P = 4a\] </span>
+          <span class="form__equation"> \[P = a + b + c\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -180,22 +180,40 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="aP" translate="no">\(a\)</label>
+                        <label for="a">\(a\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>side</p>
                       </td>
                       <td>
-                        <input
-                          id="aP"
-                          type="number"
-                          oninput="callPerimeter()"
-                        />
+                        <input id="a" type="number" oninput="callPerimeter()" />
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="P" translate="no">\(P\)</label>
+                        <label for="b">\(b\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input id="b" type="number" oninput="callPerimeter()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="c">\(c\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input id="c" type="number" oninput="callPerimeter()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="P">\(P\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>Perimeter</p>
@@ -209,7 +227,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../../assets/media/videos/geo/1080p60/square/MySquare_line.mp4"
+                      src="../../assets/media/videos/geo/1080p60/triangle/MyTriangle_abc_line.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -225,62 +243,10 @@
         </div>
       </div>
       <div class="content">
-        <div class="title">Diagonal</div>
-        <div class="lineh"></div>
-        <div class="form">
-          <span class="form__equation" translate="no"> \[A = \sqrt{2}a\] </span>
-          <table style="width: 100%; table-layout: fixed">
-            <tbody>
-              <tr>
-                <td>
-                  <table style="margin: 0">
-                    <tr>
-                      <td>
-                        <label for="aD" translate="no">\(a\)</label>
-                      </td>
-                      <td style="width: 20%">
-                        <p>side</p>
-                      </td>
-                      <td>
-                        <input id="aD" type="number" oninput="callDiagonal()" />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="d" translate="no">\(d\)</label>
-                      </td>
-                      <td style="width: 20%">
-                        <p>diagonal</p>
-                      </td>
-                      <td>
-                        <input id="d" type="number" oninput="callDiagonal()" />
-                      </td>
-                    </tr>
-                  </table>
-                </td>
-                <td>
-                  <video autoplay muted loop>
-                    <source
-                      src="../../assets/media/videos/geo/1080p60/square/MySquare_d.mp4"
-                      type="video/mp4"
-                    />
-                  </video>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div class="form__result">
-            <div class="eq-align">
-              <p id="diagonal"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="content">
         <div class="title">Area</div>
         <div class="lineh"></div>
         <div class="form">
-          <span class="form__equation" translate="no"> \[A = a^2\] </span>
+          <span class="form__equation"> \[A = \frac{1}{2} bh\] </span>
           <table style="width: 100%; table-layout: fixed">
             <tbody>
               <tr>
@@ -288,18 +254,29 @@
                   <table style="margin: 0">
                     <tr>
                       <td>
-                        <label for="aA" translate="no">\(a\)</label>
+                        <label for="base">\(b\)</label>
                       </td>
                       <td style="width: 20%">
-                        <p>side</p>
+                        <p>base</p>
                       </td>
                       <td>
-                        <input id="aA" type="number" oninput="callArea()" />
+                        <input id="base" type="number" oninput="callArea()" />
                       </td>
                     </tr>
                     <tr>
                       <td>
-                        <label for="A" translate="no">\(A\)</label>
+                        <label for="height">\(h\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>height</p>
+                      </td>
+                      <td>
+                        <input id="height" type="number" oninput="callArea()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="A">\(A\)</label>
                       </td>
                       <td style="width: 20%">
                         <p>Area</p>
@@ -313,7 +290,7 @@
                 <td>
                   <video autoplay muted loop>
                     <source
-                      src="../../assets/media/videos/geo/1080p60/square/MySquare.mp4"
+                      src="../../assets/media/videos/geo/1080p60/triangle/MyTriangle_bh.mp4"
                       type="video/mp4"
                     />
                   </video>
@@ -324,6 +301,157 @@
           <div class="form__result">
             <div class="eq-align">
               <p id="area"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">Heron</div>
+        <div class="lineh"></div>
+        <div class="form">
+          <span class="form__equation"> \[s = \frac{a + b + c}{2}\] </span>
+          <br />
+          <span class="form__equation"> \[A = \sqrt{s(s-a)(s-b)(s-c)}\] </span>
+          <table style="width: 100%; table-layout: fixed">
+            <tbody>
+              <tr>
+                <td>
+                  <table style="margin: 0">
+                    <tr>
+                      <td>
+                        <label for="aH">\(a\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input id="aH" type="number" oninput="callHeron()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="bH">\(b\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input id="bH" type="number" oninput="callHeron()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="cH">\(c\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input id="cH" type="number" oninput="callHeron()" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="H">\(A\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>Area</p>
+                      </td>
+                      <td>
+                        <input id="H" type="number" oninput="callHeron()" />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <video autoplay muted loop>
+                    <source
+                      src="../../assets/media/videos/geo/1080p60/triangle/MyTriangle_abc.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="form__result">
+            <div class="eq-align">
+              <p id="heron"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="title">Pythagoras</div>
+        <div class="lineh"></div>
+        <div class="form">
+          <span class="form__equation"> \[a^2 + b^2 = c^2\] </span>
+          <table style="width: 100%; table-layout: fixed">
+            <tbody>
+              <tr>
+                <td>
+                  <table style="margin: 0">
+                    <tr>
+                      <td>
+                        <label for="aPy">\(a\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input
+                          id="aPy"
+                          type="number"
+                          oninput="callPythagoras()"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="bPy">\(b\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input
+                          id="bPy"
+                          type="number"
+                          oninput="callPythagoras()"
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="cPy">\(c\)</label>
+                      </td>
+                      <td style="width: 20%">
+                        <p>side</p>
+                      </td>
+                      <td>
+                        <input
+                          id="cPy"
+                          type="number"
+                          oninput="callPythagoras()"
+                        />
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td>
+                  <video autoplay muted loop>
+                    <source
+                      src="../assets/media/videos/geo/1080p60/Pythagoras.mp4"
+                      type="video/mp4"
+                    />
+                  </video>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="form__result">
+            <div class="eq-align">
+              <p id="pythagoras"></p>
             </div>
           </div>
         </div>
@@ -357,9 +485,9 @@
           ></a>
         </li>
       </ul>
-      <p style="margin-bottom: 2vh" translate="no">
-        © Zenith Technologies 2024 | All Rights Reserved
-      </p>
+      <p style="margin-bottom: 0">© Copyright 2024 | All Rights Reserved</p>
+      <p>Aaron Hartono</p>
+
       <div id="google_translate_element"></div>
     </footer>
 
@@ -376,11 +504,13 @@
       type="text/javascript"
       src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
     ></script>
+
     <!-- scripts -->
     <script src="../../script/navbar.js"></script>
     <script src="../../script/variables.js"></script>
-    <script src="script/perimeter.js"></script>
-    <script src="script/diagonal.js"></script>
-    <script src="script/area.js"></script>
+    <script src="./script/perimeter.js"></script>
+    <script src="./script/area.js"></script>
+    <script src="./script/heron.js"></script>
+    <script src="./script/pythagoras.js"></script>
   </body>
 </html>
